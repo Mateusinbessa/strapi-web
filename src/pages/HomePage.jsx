@@ -16,9 +16,9 @@ const HomePage = () => {
           <div className="rating">{review.attributes.rating}</div>
           <h2>{review.attributes.title}</h2>
           
-          <small>console list</small>
+          <small>Category</small>
 
-          <p>{review.attributes.body}</p>
+          <p>{review.attributes.body.substring(0, 200)}...</p>
           <Link to={`/details/${review.id}`}>Read more</Link>
         </div>
       ))}
